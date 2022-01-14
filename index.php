@@ -9,8 +9,8 @@
 <body>
     <form action="potencia.php" method="POST">
 
-    <input name="num1" placeholder="Número" type="number">
-    <input name="num2" placeholder="Número" type="number">
+    <input name="num1" placeholder="Número do Numerador" type="number">
+    <input name="num2" placeholder="Número da Potencia" type="number">
           <button type="submit" >Calcular</button>
     </form>
 </body>

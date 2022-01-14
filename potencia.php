@@ -1,12 +1,11 @@
 <?php
 
-funcion pot($x, $y) {
-
+function pot($x, $y) {
     //verificar se é inteiro
     if (!is_int($y)) {
         return 'Numero não é inteiro';
     }
-}
+
     //verificar se é negativo
     if ($y < 0) {
         $x = 1 /$x;
@@ -18,11 +17,9 @@ funcion pot($x, $y) {
         $total = $total * $x;
     }
     return $total;
-
 }
-$num1 = $_POST['num1'];
-$num2 = $_POST['num2'];
-
+$num1 = (int) $_POST['num1'];
+$num2 = (int) $_POST['num2'];
 $pot = pot($num1, $num2);
 
 echo $pot;
